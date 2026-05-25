@@ -1,0 +1,16 @@
+    3  docker build -t rag-app:latest -f Docker/Dockerfile .
+    4  docker run -d -p 8000:8000 --name rag-test rag-app:latest
+    5  docker ps
+    6  docker logs 1dedd22aa38a
+    7  brew install minikube\nbrew install kubectl
+    8  minikube version\nkubectl version --client
+    9  minikube start
+   10  kubectl get nodes
+   11  minikube image load rag-app:latest
+   12  mkdir k8s\ncd k8s\ntouch deployment.yaml service.yaml
+   13  kubectl apply -f k8s/
+   14  pwd
+   15  cd ..
+   16  kubectl apply -f k8s/
+   17  kubectl get pods\nkubectl get svc
+   18  minikube service rag-service

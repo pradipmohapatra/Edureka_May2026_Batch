@@ -1,0 +1,16 @@
+    7  echo 'export PATH="/opt/homebrew/opt/python@3.12/bin:$PATH"' >> ~/.zprofile\nsource ~/.zprofile
+    8  python3 --version
+    9  python --version
+   10  python3 --version\npip3 --version
+   11  echo 'alias python=python3' >> ~/.zshrc\necho 'alias pip=pip3' >> ~/.zshrc\nsource ~/.zshrc
+   12  brew install pyenv\npyenv install 3.12.10\npyenv global 3.12.10
+   13  python --version
+   14  brew install git\nbrew install node\nbrew install uv
+   15  pip3 install openai anthropic langchain crewai autogen jupyterlab pandas numpy
+   16  python3 -m venv myenv\nsource myenv/bin/activate
+   17  pip install -r requirements.txt
+   18  clear
+   19  uvicorn app.api.main:app
+   20  uvicorn app.api.main:app
+   21  uvicorn app.api.main:app
+   22  history > terminal_history>2.txt
